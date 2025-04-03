@@ -7,6 +7,14 @@ import { themeNames, kcEnvDefaults } from "../kc.gen";
 
 const kcContextExtension: KcContextExtension = {
     themeName: themeNames[0],
+    loginModalOpen: false,
+    registrationDisabled: false,
+    realm: {
+        registrationAllowed: true
+    },
+    url: {
+        registrationUrl: "#",
+    },
     properties: {
         ...kcEnvDefaults
     }

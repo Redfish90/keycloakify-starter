@@ -7,7 +7,13 @@ export default defineConfig({
     plugins: [
         react(),
         keycloakify({
-            accountThemeImplementation: "none"
+            accountThemeImplementation: "none",
+            themeName: "VMI-Theme",
+            themeVersion: "0.0.0-alpha.1",
+            keycloakVersionTargets: {
+                "22-to-25": true,
+                "all-other-versions": true
+            }
         })
     ]
 });
