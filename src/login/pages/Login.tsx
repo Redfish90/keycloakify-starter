@@ -295,7 +295,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
                             action={url.loginAction}
                             method="post"
                         >
-                            <Grid container spacing={2}>
+                            <Grid container spacing={3}>
                                 {!usernameHidden && (
                                     <Grid size={12}>
                                         <FormControl fullWidth>
